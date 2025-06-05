@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/sumoConfiguration.xsd">
+ 
+    <input>
+        <net-file value="test.net.xml"/>
+        <route-files value="Demand_075.rou.xml"/>
+        <summary-output value="summary_fixed.xml"/>
+    </input>
+ 
+    <time>
+        <begin value="0"/>
+        <step-length value="0.01"/>
+    </time>
+ 
+     <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <gui-only>
+        <start value="false"/>
+    </gui-only>
+
+    <emissions>
+        <device.emissions.probability value="1"/>
+    </emissions>
+
+    <output>
+        <tripinfo-output value="tripinfo_fixed.xml"/>
+    </output>
+
+</configuration>
